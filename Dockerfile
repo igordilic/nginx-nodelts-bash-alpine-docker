@@ -1,4 +1,4 @@
-FROM igorilic/nginx-nodejslts-alpine:latest
+FROM igorilic/nginx-nodejslts-alpine:node7x
 
 # Install bash shell
 RUN apk update \
