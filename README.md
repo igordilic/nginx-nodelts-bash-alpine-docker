@@ -8,4 +8,3 @@ Tags will apply to different nodejs version:
 - `stable` - LTS
 - `latest` - latest
 - `node7x` - final node 7.x.x release
-
