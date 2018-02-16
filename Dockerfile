@@ -4,7 +4,8 @@ MAINTAINER Igor Ilic
 
 ENV NGINX_VERSION nginx-1.13.5
 
-RUN   apk update && \
+RUN   apk upgrade && \
+      apk update && \
       apk add --no-cache --virtual .build-deps \
       openssl-dev \
       libc-dev \
@@ -50,7 +51,7 @@ RUN   apk update && \
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY nginx.default.conf /etc/nginx/conf.d/default.conf
 
-EXPOSE 80 443
+EXPOSE 8080 443
 
 STOPSIGNAL SIGTERM
 
